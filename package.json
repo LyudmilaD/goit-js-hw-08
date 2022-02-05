@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "c",
   "version": "1.1.0",
-  "description": "",
+  "description": "## Скрытые файлы",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://LyudmilaD.io/goit-js-hw-08",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
