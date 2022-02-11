@@ -31,8 +31,9 @@ console.log(onPlayTime);
 player.on('timeupdate', throttle(onPlayTime, 1000)); 
 const savedTime = localStorage.getItem('videoplayer-current-time');
 const parsedTime = JSON.parse(savedTime);
-if (parsedTime.seconds === 571.563) {
-    localStorage.removeItem('videoplayer-current-time'); 
+if (parsedTime.seconds === 571.56) {
+  localStorage.removeItem('videoplayer-current-time');
+} else {
   player
     .setCurrentTime(parsedTime.seconds)
     .then(function (seconds) {
@@ -48,3 +49,21 @@ if (parsedTime.seconds === 571.563) {
       }
     });
 }
+
+
+// player
+//   .setCurrentTime(30.456)
+//   .then(function (seconds) {
+//     // seconds = the actual time that the player seeked to
+//   })
+//   .catch(function (error) {
+//     switch (error.name) {
+//       case 'RangeError':
+//         // the time was less than 0 or greater than the video’s duration
+//         break;
+
+//       default:
+//         // some other error occurred
+//         break;
+//     }
+//   });
